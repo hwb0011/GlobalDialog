@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GlobalDialog</string>
+    <string name="global_dialog_default_cancel_text">取消</string>
+</resources>

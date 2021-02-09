@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.longcode.globaldialog.GlobalDialogNormalView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_layout"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:divider="@drawable/global_dialog_divider_horizontal"
+    android:showDividers="middle"
+    android:background="@drawable/global_dialog_normal_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/global_dialog_normal_content_min_width"
+        android:orientation="vertical"
+        android:padding="@dimen/global_dialog_content_padding"
+        android:divider="@drawable/global_dialog_content_padding"
+        android:showDividers="middle">
+
+        <ImageView
+            android:id="@+id/iv_title_icon"
+            android:layout_width="@dimen/global_dialog_normal_title_icon_size"
+            android:layout_height="@dimen/global_dialog_normal_title_icon_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="DialogTitleIcon"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/global_dialog_normal_title_text_size"
+            android:textColor="@color/global_dialog_normal_title_text_color"
+            android:text="Title"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/global_dialog_normal_content_text_size"
+            android:textColor="@color/global_dialog_normal_content_text_color"
+            android:text="Message"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/global_dialog_divider_vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_negative_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/global_dialog_normal_button_height"
+            android:layout_weight="1"
+            android:minWidth="@dimen/global_dialog_normal_button_min_width"
+            android:padding="@dimen/global_dialog_normal_button_padding"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/global_dialog_normal_title_text_size"
+            android:textColor="@color/global_dialog_normal_negative_text_color"
+            android:text="Negative"/>
+
+        <TextView
+            android:id="@+id/tv_neutral_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/global_dialog_normal_button_height"
+            android:layout_weight="1"
+            android:minWidth="@dimen/global_dialog_normal_button_min_width"
+            android:padding="@dimen/global_dialog_normal_button_padding"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/global_dialog_normal_title_text_size"
+            android:textColor="@color/global_dialog_normal_neutral_text_color"
+            android:text="Neutral"/>
+
+        <TextView
+            android:id="@+id/tv_positive_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/global_dialog_normal_button_height"
+            android:layout_weight="1"
+            android:minWidth="@dimen/global_dialog_normal_button_min_width"
+            android:padding="@dimen/global_dialog_normal_button_padding"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/global_dialog_normal_title_text_size"
+            android:textColor="@color/global_dialog_normal_positive_text_color"
+            android:text="Positive"/>
+
+    </LinearLayout>
+
+</com.longcode.globaldialog.GlobalDialogNormalView>

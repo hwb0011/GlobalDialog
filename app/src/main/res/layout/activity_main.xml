@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rb_show_title_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ShowTitleIcon (default: false)" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rb_cancelable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Cancelable (default: true)" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rb_outside_touchable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OutsideTouchable (default: false)" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rb_show_btn_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ShowButtonIcon (default: false)"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/rg_show_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_type_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="ShowInCenter" />
+
+                <RadioButton
+                    android:id="@+id/rb_type_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ShowFromTop" />
+
+                <RadioButton
+                    android:id="@+id/rb_type_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ShowFromBottom" />
+
+            </RadioGroup>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/rg_show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_show_always"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="ShowTimeAlways" />
+
+                <RadioButton
+                    android:id="@+id/rb_show_short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ShowTimeShort" />
+
+                <RadioButton
+                    android:id="@+id/rb_show_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ShowTimeLong" />
+
+            </RadioGroup>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

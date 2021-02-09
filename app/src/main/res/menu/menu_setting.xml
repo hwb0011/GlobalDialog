@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_replay"
+        android:orderInCategory="100"
+        android:title="Reset"
+        android:icon="@drawable/ic_replay_black_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_check"
+        android:orderInCategory="100"
+        android:title="Popup"
+        android:icon="@drawable/ic_check_black_24dp"
+        app:showAsAction="ifRoom" />
+</menu>

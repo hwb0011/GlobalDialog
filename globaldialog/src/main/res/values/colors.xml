@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="global_dialog_divider_color" type="color">#ddd</item>
+
+    <item name="global_dialog_normal_title_text_color" type="color">#000</item>
+    <item name="global_dialog_normal_content_text_color" type="color">#111</item>
+    <item name="global_dialog_normal_negative_text_color" type="color">#666</item>
+    <item name="global_dialog_normal_positive_text_color" type="color">#00f</item>
+    <item name="global_dialog_normal_neutral_text_color" type="color">#111</item>
+
+    <item name="global_dialog_top_statue_bar_color" type="color">#fff</item>
+    <item name="global_dialog_top_title_text_color" type="color">#666</item>
+    <item name="global_dialog_top_content_text_color" type="color">#000</item>
+
+    <item name="global_dialog_bottom_title_text_color" type="color">#666</item>
+    <item name="global_dialog_bottom_content_text_color" type="color">#000</item>
+</resources>
