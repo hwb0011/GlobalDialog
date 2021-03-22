@@ -1,5 +1,8 @@
-# GlobalDialog [V1.0.0.arr](https://github.com/hwb0011/GlobalDialog/releases/download/v1.0.0/globaldialog-release-v1.0.0.aar)
-A dialog can create by ApplicationContext in Android. It developed by Kotlin language. 
+# GlobalDialog
+
+[![](https://jitpack.io/v/hwb0011/GlobalDialog.svg)](https://jitpack.io/#hwb0011/GlobalDialog)
+
+A dialog can create by ApplicationContext in Android. It developed by Kotlin language.
 
 You can use GlobalDialog like AlertDialog, but GlobalDialog can be created by ApplicationContext, you can create it in anywhere don't think how to find your Activity, it will be very flexible just like Toast.
 
@@ -10,6 +13,28 @@ Android全局对话框，可通过ApplicationContext创建。Kotlin语言开发�
 你可以像使用AlertDialog一样使用GlobalDialog，但是GlobalDialog可以使用ApplicationContext创建，你可以在任何地方创建对话框而不需要想怎么去拿到Activity对象，它可以像Toast一样非常灵活的使用。
 
 但是目前还没有完全实现AlertDialog拥有的全部功能，但是它会随着时间变得越来越健壮。
+
+# Usage
+
+##  Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+##  Step 2. Add the dependency
+
+```
+	dependencies {
+	        implementation 'com.github.hwb0011:GlobalDialog:Tag'
+	}
+```
 
 # ChangeHistory
 
